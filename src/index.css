@@ -1,0 +1,249 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  max-width: 100dvw;;
+  min-height: 100dvh;
+  background: radial-gradient(circle at center -150px, rgba(19, 143, 200, 0.8) 0%, rgba(0, 0, 0, 0.9) 4%);
+}
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-width: 100dvw;;
+  scroll-snap-type: y mandatory;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px 24px;
+  margin-bottom: 56px;
+  gap: 16px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 42px;
+  text-align: center;
+}
+
+h1 > span {
+  font-weight: 700;
+  font-size: 42px;
+  background: -webkit-linear-gradient(0deg, #2affdf, #4a99f4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+}
+
+.info {
+  font-size: 24px;
+}
+
+.p0-subtitle {
+  margin-top: 24px;
+}
+
+.download-link {
+  border: 1px solid #ffffff;
+  border-radius: 36px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.download-link:hover {
+  background-color: #84848425;
+}
+
+.download-icon {
+  width: 24px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.social-link:hover {
+  color: #97ffef;
+}
+
+.social-link:visited {
+  color: #ffffff;
+}
+
+.social-icon {
+  width: 36px;
+}
+
+.morphing-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0px;
+  width: 100%;
+}
+
+.token-container {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mt-mobile {
+  margin-top: 32px;
+}
+
+@media (max-width: 360px) {
+  .mt-mobile {
+    margin-top: 32px;
+  }
+  .left-aligned-mobile {
+    text-align: left;
+  }
+  .token-container {
+    width: 32px;
+    height: 32px;
+  }
+  .morphing-wrapper {
+    margin: 12px 0px;
+  }
+  nav {
+    margin-bottom: 20px;
+  }
+  h1,
+  h1 > span {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+  h2,
+  h2 > span {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+  .mb-mobile {
+    margin-bottom: 12px;
+  }
+}
+
+@media (361px <= width <= 767px) {
+  .mt-mobile {
+    margin-top: 32px;
+  }
+  .left-aligned-mobile {
+    text-align: left;
+  }
+  .mb-big-mobile {
+    margin-bottom: 16px;
+  }
+  nav {
+    margin-bottom: 24px;
+  }
+
+  h1,
+  h1 > span {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  h2,
+  h2 > span {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .p0-subtitle {
+    margin-top: 12px;
+  }
+}
+
+@media (768px <= width) {
+  .mt-desktop {
+    margin-top: 128px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+}
+
+
+.ton-gradient {
+  background: -webkit-linear-gradient(0deg, #2affdf, #4a99f4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.usdt-gradient {
+  background: -webkit-linear-gradient(45deg, #2c9b5c, #2affdf);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.charges-gradient {
+  background: -webkit-linear-gradient(70deg, #ff5623 0%, #ffa12e 50%, #f92d67 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-gradient {
+  background: -webkit-linear-gradient(70deg, #6a6a6a 0%, #cdf1ff 50%, #6a6a6a 85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

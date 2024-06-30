@@ -1,0 +1,60 @@
+:root {
+	--phone-width: 400px;
+	--phone-max-width: 420px;
+	--content-width: calc(var(--phone-width) - 70px);
+	--phone-aspect-ratio: 1684 / 3378;
+	--content-aspect-ratio: 1284 / 2778;
+}
+
+@media (max-width: 768px) {
+	:root {
+		--phone-width: 320px;
+		--content-width: calc(var(--phone-width) - 56px);
+	}
+  }
+
+#phoneContainer {
+	width: var(--phone-width);
+	height: auto;
+	max-width: var(--phone-max-width);
+	aspect-ratio: var(--phone-aspect-ratio);
+	position: fixed;
+	top: 40dvh;
+	left: calc(50dvw - var(--phone-width) / 2);
+	transition: top 0.5s, opacity 0.25s;
+}
+
+#phoneContainer img:first-child {
+	position: relative;
+	z-index: 1000;
+	width: var(--phone-width);
+	max-width: var(--phone-max-width);
+	aspect-ratio: var(--phone-aspect-ratio);
+}
+
+.phoneContent {
+	position: absolute;
+	top: 5.5%;
+	left: calc(50% - var(--content-width) / 2);
+	aspect-ratio: var(--content-aspect-ratio);
+	width: var(--content-width);
+	height: auto;
+	border-radius: 24px;
+}
+
+.phoneInteraction {
+	position: absolute;
+	cursor: pointer;
+	background: transparent;
+	border: 2px solid #ffa600cc;
+	background-color: #ffa60010;
+	border-radius: 4px;
+	z-index: 9999;
+}
+
+.phoneSpotlight {
+	position: absolute;
+	background: linear-gradient(15deg, #ff2200, #ff7700);
+	border-radius: 4px;
+	z-index: 9999;
+}

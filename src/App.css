@@ -1,0 +1,37 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 48px 40px;
+  min-height: 100dvh;
+  scroll-snap-align: start;
+}
+
+section:not(.page0):not(.last-page) {
+    background-image: radial-gradient(circle at center 75%, transparent 0%, #040404 65%), repeating-linear-gradient(0deg, rgb(41, 41, 41) 0px, rgb(41, 41, 41) 1px,transparent 1px, transparent 21px),repeating-linear-gradient(90deg, rgb(41, 41, 41) 0px, rgb(41, 41, 41) 1px,transparent 1px, transparent 21px),linear-gradient(90deg, #040404,#040404);
+}
+
+@media (max-width: 360px) {
+  section {
+    padding: 16px 16px;
+  }
+}
+
+@media (361px <= width <= 767px) {
+  section {
+    padding: 24px 16px;
+  }
+}
+
+section.page0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.last-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
