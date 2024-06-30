@@ -234,6 +234,13 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
+.not-gradient {
+  background: -webkit-linear-gradient(80deg, #c9f6ff 30%, #565656 50%, #c9f6ff 65%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .charges-gradient {
   background: -webkit-linear-gradient(70deg, #ff5623 0%, #ffa12e 50%, #f92d67 75%);
   background-clip: text;
